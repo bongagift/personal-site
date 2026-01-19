@@ -11,10 +11,7 @@
             font-size: 14px;
             line-height: 1.5;
             padding-left: 40px;
-            display: flex;
-            gap: 60px;
-            flex-wrap: wrap;
-            align-content: flex-start;
+            display: block;
         }
 
         .main-content {
@@ -36,8 +33,8 @@
         }
 
         img {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             object-fit: cover;
             margin-bottom: 40px;
             margin-right: 40px;
@@ -62,15 +59,6 @@
                 font-size: 14px;
                 padding-left: 40px;
                 padding-right: 40px;
-                display: flex;
-                gap: 60px;
-                flex-wrap: wrap;
-                align-content: flex-start;
-            }
-
-            .main-content {
-                flex: none;
-                width: auto;
             }
 
             h3,
@@ -79,17 +67,17 @@
             }
 
             .books-sidebar {
-                position: static;
+                position: fixed;
                 width: 250px;
-                margin-top: 20px;
+                right: 40px;
+                top: 40px;
             }
         }
     </style>
 </head>
-
+<img src="header-linkedin.jpeg" alt="art" width="100%" height="auto">
 <body>
     <div class="main-content">
-        <img src="header-linkedin.jpeg" alt="art" width="100%" height="auto">
 
         <p>
             I am an Irish-South African born and raised in County Carlow, Ireland.<br> I now live in Palo Alto,
