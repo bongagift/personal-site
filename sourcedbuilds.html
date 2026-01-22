@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1000">
     <title>Sourced Builds</title>
 </head>
 <style>
@@ -12,17 +12,20 @@
             font-size: 14px;
             line-height: 1.5;
             padding-left: 40px;
+            /* Fixed width ensures no shifting between desktop and mobile */
+            width: 1000px; 
+            margin: 0 auto;
             display: block;
+            position: relative;
         }
 
         .main-content {
-            flex: 1;
-            width: 100%;
+            width: 650px; /* Constrains text width for better readability */
         }
 
         .books-sidebar {
             width: 250px;
-            position: fixed;
+            position: absolute; /* Keeps it strictly to the right of the content */
             right: 40px;
             top: 40px;
         }
@@ -52,81 +55,33 @@
 
         a:hover {
             color: #0000EE;
-
         }
 
-        @media (max-width: 768px) {
-            body {
-                font-size: 13px;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-
-            h3,
-            h4 {
-                font-size: 13px;
-            }
-
-            img {
-                width: 80px;
-                height: 80px;
-                margin-bottom: 20px;
-                margin-right: 20px;
-            }
-
-            .books-sidebar {
-                position: static;
-                width: 100%;
-                margin-top: 20px;
-                order: 10;
-            }
-        }
-
-        @media (max-width: 480px) {
-            body {
-                font-size: 12px;
-                padding-left: 16px;
-                padding-right: 16px;
-            }
-
-            h3,
-            h4 {
-                font-size: 12px;
-            }
-
-            img {
-                width: 70px;
-                height: 70px;
-                margin-bottom: 15px;
-                margin-right: 15px;
-            }
-
-            .books-sidebar {
-                margin-top: 15px;
-            }
-        }
+        /* All @media queries have been removed to prevent resizing */
 </style>
 
 <body>
     <div class="main-content">
-
         <header>
             <h2>Sourced Builds</h2>
         </header>
 
         <p>Primebuild at one point was my life force, calling - recruiting everything slowly at once,<br>
-             Now it seems to have been a little bit flattering to go around my local town with my second-hand <br> suits pitching a new life and future in construction without a single clue about how one was going <br> to build it - I mean this is bigger a glorified b2b ad agency.
-        a glorified b2b ad agency.
+             Now it seems to have been a little bit flattering to go around my local town with my second-hand <br> suits pitching a new life and future in construction without a single clue about how one was going <br> to build it - I mean this is bigger a glorified b2b ad agency.</p>
 
         <p>2025 has been the year of re-evaluation, and I have come to the conclusion that science <br> and technology, in other words <em><a href="https://paulgraham.com/gh.html">earnest hacking</a></em>
     is my true calling.</p>
         <p>That said, I have decided to open-source all my Primebuild material for free public use,
-        including <br> some of my sourced drawings, new-builds, and even my first campaign as a >novice back in the day.</p>
+        including <br> some of my sourced drawings, new-builds, and even my first campaign as a novice back in the day.</p>
+        
         <a href="https://drive.google.com/drive/folders/1_Oyh7B7lzwfF-uDFVH0TL19dyMhSm6vn?usp=sharing">Drawings</a><br>
-        <a
-            href="https://drive.google.com/drive/folders/1OjR4V7YedLP-M_oU7UA1hUJU1AFGSbzO?usp=sharing">New-Builds</a><br>
+        <a href="https://drive.google.com/drive/folders/1OjR4V7YedLP-M_oU7UA1hUJU1AFGSbzO?usp=sharing">New-Builds</a><br>
         <a href="https://drive.google.com/drive/folders/1FNQsRcjaP8nl_uoOrgzBvzF08_Bau3SC?usp=sharing">First
-            Campaign as a Novice,</a> with client <a href="https://timbermillconstruction.ie">Timbermill Construction</a></a>
+            Campaign as a Novice,</a> with client <a href="https://timbermillconstruction.ie">Timbermill Construction</a>
+    </div>
+
+    <div class="books-sidebar">
+        </div>
 </body>
 
 </html>
